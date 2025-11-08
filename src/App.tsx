@@ -8,7 +8,8 @@ function App() {
   const [count, setCount] = useState(0)
   const [movies, setMovies] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-
+console.log(movies,'movies')
+console.log(loading,'loading')
   useEffect(() => {
     const fetchMovies = async () => {
       try {
